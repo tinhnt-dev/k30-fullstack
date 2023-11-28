@@ -1,0 +1,46 @@
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'layout/headers';
+@import 'layout/footer';
+@import 'layout/sidebar';
+@import 'layout/navigation';
+
+@import 'components/buttons';
+@import 'components/carousel';
+
+@import 'pages/home';
+
+@import 'themes/themes';
+@import 'themes/admin';
+
+// body {
+//     font-size: 16px;
+//     font-family: 'Poppins', sans-serif;
+// }
+// .nav {
+//     display: flex; 
+//     position: fixed; 
+//     top: 0; 
+//     right: 0; 
+//     background-color: #be3144; 
+//     width: 100%; 
+//     justify-content: end;
+
+//     ul {
+//         display: flex; 
+//         margin-right: 1rem;
+//         li {
+//             text-decoration: none;
+//             margin-right: 1rem;
+//             a {
+//                 text-decoration: none;
+//                 color: aliceblue;
+//                 padding: 1rem;
+//             }
+//         }
+//     }
+// }
