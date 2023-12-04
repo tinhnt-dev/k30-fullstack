@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&amp;display=fallback">
+    <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="content-wrapper">
+        <!-- Heading -->
+        <div class="row pl-3">
+            <p class="pt-3 pl-3 pb-0 col-12 col-sm-9 h4">Profile</p>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb float-right">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                </ol>
+            </nav>
+        </div>
+        <!-- Tạo grid chứa 1 hàng 2 cột-->
+        <div class="row row-cols-2 m-0">
+            <!-- Cột đầu tiên chứa thẻ avatar và about me-->
+            <div class="col-12 col-md-3 m-0 p-0">
+                <!--Thẻ avatar-->
+                <div class="card-outline rounded ml-3 p-0 mr-2 mr-md-0">
+                    <div class="avatar card ml-0 p-0">
+                        <div class="card-body m-0 p-0 ">
+                            <div class="introduction text-center">
+                                <img src="https://adminlte.io/themes/v3/dist/img/user4-128x128.jpg" 
+                                class="rounded-circle mt-3 mb-3 " id="avatar">
+                                <p class="name">Nina Mcintire</p>
+                                <p class="job">Software Engineer</p>
+                            </div>
+                            <!-- số follow, bạn bè -->
+                            <div class="social-interaction">
+                                <div class="row m-0">
+                                <p class="col mb-2 ml-3 pt-2 p-0 border-top font-weight-bold">Followers</p>
+                                <p class="col mb-2 mr-3 pt-2 p-0 text-right text-primary border-top">1,322</p>
+                                </div>
+                                <div class="row m-0">
+                                <p class="col mb-2 ml-3 pb-2 pt-2 p-0 border-top border-bottom font-weight-bold">Following</p>
+                                <p class="col mb-2 mr-3 pb-2 pt-2 p-0 text-right text-primary border-top border-bottom">543</p>
+                                </div>
+                                <div class="row m-0">
+                                <p class="col ml-3 p-0 pb-2 border-bottom font-weight-bold">Friends</p>
+                                <p class="col mr-3 p-0 pb-2 text-right text-primary border-bottom">13,287</p>
+                                </div>
+                            </div>
+                            <!-- nút follow -->
+                            <div class="col mb-3 d-grid">
+                                <button type="button" class="button btn-primary btn-block rounded font-weight-bold 
+                                pb-1 pt-1 pl-2 pr-2">
+                                Follow
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thẻ About me -->
+                <div class="about-me card ml-3 mt-3 mb-3 mr-2 mr-md-0">
+                    <div class="card-header bg-primary text-white">
+                        About Me
+                    </div>
+                    <div class="education m-3 border-bottom"> 
+                        <p class="field row pl-3 mb-0 font-weight-bold"><i class="fas fa-book mr-1 fa-sm"></i>Education</p>
+                        <p class="description row pl-3 mr-0">B.S. in Computer Science from the University of Tennessee at Knoxville</p>
+                    </div>
+
+                    <div class="location mb-3 ml-3 mr-3 mt-0 border-bottom"> 
+                        <p class="field row pl-3 mb-0 font-weight-bold"><i class="fas fa-map-marker-alt mr-1"></i>Location</p>
+                        <p class="description row pl-3 ">Malibu, California</p>
+                    </div>
+
+                    <div class="skills mb-3 ml-3 mr-3 mt-0 border-bottom"> 
+                        <p class="field row pl-3 mb-0 font-weight-bold"><i class="fas fa-pencil-alt mr-1"></i>Skills</p>
+                        <p class="description row pl-3 ">UI Design Coding Javascript PHP Node.js</p>
+                    </div>
+
+                    <div class="notes mb-3 ml-3 mr-3 mt-0"> 
+                        <p class="field row pl-3 mb-0 font-weight-bold"><i class="far fa-file-alt mr-1"></i>Note</p>
+                        <p class="description row pl-3 mr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fermentum enim neque.</p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- cột 2 -->
+        <div class="second-column col-12 col-md-9 pr-2 p-md-0 m-md-0">
+            <div class="card bg-white ml-md-2 mr-md-3">
+                <!-- nội dung của thẻ-->
+                <div class="content">
+                    <!-- nav pills -->
+                    <div class="card-header bg-white p-2">
+                        <ul class="nav nav-pills" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="pill" href="#activity">Activity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#timeline">Timeline</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="pill" href="#settings">Settings</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="card-body pt-0">
+                        <div class="tab-content">
+                            <div id="activity" class="tab-pane active m-0 p-0 "><br>
+                                <!-- status đầu tiên -->
+                                <div class="col m-0 p-0 pb-3 status-section-one border-bottom">
+                                    <div class="row row-cols-2 m-0 p-0">
+                                        <div class="col-auto m-0 p-0 pb-3">
+                                            <img src="https://adminlte.io/themes/v3/dist/img/user1-128x128.jpg" class="rounded-circle comment-avatar" >
+                                        </div>
+                                        <div class="col-auto">
+                                            <a class="m-0 text-primary status-name">Jonathan Burke Jr.</a>
+                                            <p class="m-0 type-time">Share publicly - 7:30 today</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <p class="status-content">Lorem ipsum represents a long-held tradition for designers, typographers and the like. Some people hate it and argue for its demise, but others ignore the hate as they create awesome tools to help create filler text for everyone from bacon lovers to Charlie Sheen fans.</p>
+                                    </div>
+                                    
+                                    <!-- reaction -->
+                                    <div class=" d-flex bd-highlight mb-3">
+                                        <div class="view overlay p-0 bd-highlight">
+                                            <a href="#" class="reaction link-black text-sm mr-2"><i class="fas fa-share mr-1"></i> Share</a>
+                                            <div class="mask rgba-white-strong"></div>
+                                        </div>
+                                        <div class=" p-0 bd-highlight">
+                                            <a href="#" class="reaction link-black text-sm"><i class="far fa-thumbs-up mr-1"></i> Like</a>
+                                        </div>
+                                        <div class=" ml-auto p-0 bd-highlight">
+                                            <a href="#" class="reaction link-black text-sm">
+                                                <i class="far fa-comments mr-1"></i> Comments (5)
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " name="comment-name" placeholder="Type a comment">
+                                    </div>
+                                
+                                <!-- status thứ 2 -->
+                                </div>
+                                <div class="col m-0 p-0 pt-3 pb-3 status-section-two border-bottom">
+                                    <div class="row row-cols-2 m-0 p-0">
+                                        <div class="col-auto m-0 p-0 pb-3">
+                                            <img src="https://adminlte.io/themes/v3/dist/img/user7-128x128.jpg" class="rounded-circle comment-avatar" >
+                                        </div>
+                                        <div class="col-auto">
+                                            <a class="m-0 text-primary status-name">Sarah Ross</a>
+                                            <p class="m-0 type-time">Sent you a message - 3 days ago</p>
+                                        </div>
+                                    </div>
+                                    <div class="row m-0 p-0">
+                                        <p class="status-content">Lorem ipsum represents a long-held tradition for designers, typographers and the like. Some people hate it and argue for its demise, but others ignore the hate as they create awesome tools to help create filler text for everyone from bacon lovers to Charlie Sheen fans.</p>
+                                    </div>
+
+                                    <!-- response -->
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " name="comment-name" placeholder="Response">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-secondary bg-danger text-white" type="button" id="send-button">Send</button>
+                                        </div>
+                                    </div>                    
+                                </div>
+
+                                <!-- status thứ 3 -->
+                                <div class="col m-0 p-0 pt-3 pb-3 status-section-three border-bottom">
+                                    <div class="row row-cols-2 m-0 p-0">
+                                        <div class="col-auto m-0 p-0 pb-3">
+                                            <img src="https://adminlte.io/themes/v3/dist/img/user6-128x128.jpg" class="rounded-circle comment-avatar" >
+                                        </div>
+                                        <div class="col-auto">
+                                            <a class="m-0 text-primary status-name">Adam Jones</a>
+                                            <p class="m-0 type-time">Posted 5 photos - 5 days ago</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- photo container -->
+                                    <div class="row mr-2">
+                                        <!-- chia photo container thành 2 cột -->
+                                        <!-- cột 1 -->
+                                        <div class="col-12 col-sm-6 row-cols-1 pr-0 pb-2">
+                                            <img src="https://adminlte.io/themes/v3/dist/img/photo1.png">
+                                        </div>
+                                        <!-- cột 2 -->
+                                        <div class="col-12 col-sm-6 row-cols-1">
+                                            <!-- chia cột 2 thành 2 hàng, mỗi hàng gồm 2 cột -> 4 ô -->
+                                            <!-- hàng 1 -->
+                                            <div class="row row-cols-1 row-cols-sm-2">
+                                                <div class="col row-cols-1 pr-0">
+                                                    <img src="https://adminlte.io/themes/v3/dist/img/photo2.png">
+                                                </div>
+                                                <div class="col row-cols-1 pr-0">
+                                                    <img src="https://adminlte.io/themes/v3/dist/img/photo4.jpg">
+                                                </div>
+                                            </div>
+
+                                            <!-- hàng 2 -->
+                                            <div class="row row-cols-1 row-cols-sm-2">
+                                                <div class="col row-cols-1 pr-0 pt-3">
+                                                    <img src="https://adminlte.io/themes/v3/dist/img/photo3.jpg">
+                                                </div>
+                                                <div class="col row-cols-1 pr-0 pt-3 ">
+                                                    <img src="https://adminlte.io/themes/v3/dist/img/photo1.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- reaction -->
+                                    <div class=" d-flex bd-highlight mb-3">
+                                        <div class="view overlay p-0 bd-highlight">
+                                            <a href="#" class="reaction link-black text-sm mr-2"><i class="fas fa-share mr-1"></i> Share</a>
+                                            <div class="mask rgba-white-strong"></div>
+                                        </div>
+                                        <div class=" p-0 bd-highlight">
+                                            <a href="#" class="reaction link-black text-sm"><i class="far fa-thumbs-up mr-1"></i> Like</a>
+                                        </div>
+                                        <div class=" ml-auto p-0 bd-highlight">
+                                            <a href="#" class="reaction link-black text-sm">
+                                                <i class="far fa-comments mr-1"></i> Comments (5)
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" class="form-control " name="comment-name" placeholder="Type a comment">
+                                    </div>
+                                </div>
+                            
+                            
+                        </div> 
+                        <div id="timeline" class="tab-pane fade m-0 p-0 w-100"><br>
+                            <div class=" time-table m-0">
+                                <div class="p-0 m-0 time-date">
+                                    <div class="row p-3">
+                                        <p class="col-auto time-stamp bg-danger text-white p-1 rounded">10 Feb 2014</p>
+                                    </div>
+                                    <div class="row ml-2">
+                                        <div class="col-auto">
+                                            <div class="col-auto rounded-circle bg-primary pt-1 pb-1 pl-2 pr-2">
+                                                <i class="fas fa-envelope bg-primary"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col mr-2 p-0">
+                                            <div class="card m-0 p-0 noti">
+                                                <div class="card-header pb-0">
+                                                    <div class="d-flex">
+                                                        <div><a href="" class="status-name">Support Team</a> send you an email
+                                                        </div>
+                                                        <div class="ml-auto">
+                                                            <p class="noti-time"><i class="far fa-clock"></i> 12:05</p>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="settings" class="tab-pane fade"><br>
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

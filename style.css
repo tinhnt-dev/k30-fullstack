@@ -1,0 +1,83 @@
+body {
+  overflow-x: hidden;
+}
+body .content-wrapper {
+  background: #f4f6f9;
+  font-family: "Source Sans Pro";
+  min-height: 1600px;
+}
+body #avatar {
+  width: 110px;
+  height: 110px;
+  padding: 2px;
+  border: 3px solid #adb5bd;
+}
+body .name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+body .job {
+  margin-top: 0;
+  font-weight: 300;
+  font-size: 1rem;
+}
+body .card-outline {
+  border-top: 3px solid #007bff;
+}
+body .description {
+  font-weight: 300;
+}
+body .fa {
+  line-height: 1;
+}
+body .comment-page {
+  background: white;
+}
+body .comment-page .card-header {
+  background: white;
+}
+body .comment-avatar {
+  width: 40px;
+  height: 40px;
+  padding: 2px;
+  border: 3px solid #adb5bd;
+}
+body .reaction {
+  text-decoration: none;
+  color: #6c757d;
+  font-size: 14px;
+}
+body .reaction:hover {
+  color: #e6e8ea;
+}
+body .status-name {
+  font-weight: 600;
+  text-decoration: none;
+}
+body .type-time {
+  font-weight: 400;
+  color: #adb5bd;
+  font-size: 14px;
+}
+body .status-content {
+  color: #666;
+}
+body .photo-one {
+  width: 40px;
+  height: 40px;
+}
+body .email-notify {
+  font-size: 46px;
+}
+body #timeline .time-table {
+  min-height: 1600px;
+}
+body .noti {
+  color: #495057;
+}
+body .noti-time {
+  color: #999;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
