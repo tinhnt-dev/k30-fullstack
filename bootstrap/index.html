@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google Font: Source Sans Pro -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../../plugins/fontawesome-free/css/all.min.css"
+    />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <i class="fa fa-bars" style="margin-top: 15px"></i>
+        </div>
+        <ul class="nav navbar-nav">
+          <li style="margin-top: 13px; margin-left: 30px; margin-right: 15px">
+            Home
+          </li>
+
+          <li style="margin-top: 13px">Contact</li>
+        </ul>
+      </div>
+    </nav> -->
+    <div class="container-fluid">
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-10">
+              <h1>Profile</h1>
+            </div>
+            <div class="col-sm-2">
+              <ol class="breadcrumb text-sm-center">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">User Profile</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card card-primary card-outline">
+            <div class="card-body box-profile">
+              <div class="text-center">
+                <img
+                  class="profile-user-img img-fluid rounded-circle"
+                  src="/image/user4-128x128.jpg"
+                  alt="User profile picture"
+                  style="height: 50%; width: 50%"
+                />
+              </div>
+              <h3 class="profile-username text-center">Nina Mcintire</h3>
+              <p class="text-muted text-center">Software Engineer</p>
+              <ul class="list-group list-group-unbordered mb-3">
+                <li class="list-group-item">
+                  <b>Followers</b> <a class="float-right">1,322</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Following</b> <a class="float-right">543</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Friends</b> <a class="float-right">13,287</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+            </div>
+          </div>
+
+          <div class="card card-primary">
+            <div class="card-header">
+              <h4 class="card bg-primary text-white" style="margin-top: 20px">
+                About Me
+              </h4>
+            </div>
+
+            <div class="card-body">
+              <strong><i class="fas fa-book"></i> Education</strong>
+              <p class="text-muted">
+                B.S. in Computer Science from the University of Tennessee at
+                Knoxville
+              </p>
+              <hr />
+              <strong
+                ><i class="fas fa-map-marker-alt mr-1"></i> Location</strong
+              >
+              <p class="text-muted">Malibu, California</p>
+              <hr />
+              <strong><i class="fas fa-pencil-alt mr-1"></i> Skills</strong>
+              <p class="text-muted">
+                <span class="tag tag-danger">UI Design</span>
+                <span class="tag tag-success">Coding</span>
+                <span class="tag tag-info">Javascript</span>
+                <span class="tag tag-warning">PHP</span>
+                <span class="tag tag-primary">Node.js</span>
+              </p>
+              <hr />
+              <strong><i class="far fa-file-alt mr-1"></i> Notes</strong>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                fermentum enim neque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9">
+          <div class="card">
+            <div class="card-header p-2">
+              <ul class="nav nav-pills">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#activity" data-toggle="tab"
+                    >Activity</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#timeline" data-toggle="tab"
+                    >Timeline</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#settings" data-toggle="tab"
+                    >Settings</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="active tab-pane" id="activity">
+                  <div class="post" style="margin-top: 10px">
+                    <div class="user-block">
+                      <img
+                        class="rounded-circle img-bordered-sm"
+                        src="/image/user1-128x128.jpg"
+                        alt="user image"
+                        style="height: 40px; width: 40px"
+                      />
+                      <span class="username">
+                        <a href="#">Jonathan Burke Jr.</a>
+                        <a href="#" class="float-right btn-tool"
+                          ><i class="fas fa-times"></i
+                        ></a>
+                      </span>
+                      <span class="description"
+                        >Shared publicly - 7:30 PM today</span
+                      >
+                    </div>
+
+                    <p>
+                      Lorem ipsum represents a long-held tradition for
+                      designers, typographers and the like. Some people hate it
+                      and argue for its demise, but others ignore the hate as
+                      they create awesome tools to help create filler text for
+                      everyone from bacon lovers to Charlie Sheen fans.
+                    </p>
+                    <p>
+                      <a href="#" class="link-black text-sm mr-2"
+                        ><i class="fa fa-share"></i> Share</a
+                      >
+                      <a href="#" class="link-black text-sm"
+                        ><i class="fa fa-thumbs-o-up"></i> Like</a
+                      >
+                      <span class="float-right">
+                        <a href="#" class="link-black text-sm">
+                          <i class="fa fa-comments-o"></i> Comments (5)
+                        </a>
+                      </span>
+                    </p>
+                    <input
+                      class="form-control form-control-sm"
+                      type="text"
+                      placeholder="Type a comment"
+                    />
+                  </div>
+
+                  <div class="post" style="margin-top: 20px">
+                    <div class="user-block">
+                      <img
+                        class="rounded-circle img-bordered-sm"
+                        src="/image/user6-128x128.jpg"
+                        alt="User Image"
+                        style="height: 30px; width: 30px"
+                      />
+                      <span class="username">
+                        <a href="#">Sarah Ross</a>
+                        <a href="#" class="float-right btn-tool"
+                          ><i class="fas fa-times"></i
+                        ></a>
+                      </span>
+                      <span class="description"
+                        >Sent you a message - 3 days ago</span
+                      >
+                    </div>
+
+                    <p>
+                      Lorem ipsum represents a long-held tradition for
+                      designers, typographers and the like. Some people hate it
+                      and argue for its demise, but others ignore the hate as
+                      they create awesome tools to help create filler text for
+                      everyone from bacon lovers to Charlie Sheen fans.
+                    </p>
+                    <form class="form-horizontal">
+                      <div class="row">
+                        <div class="col-lg-11">
+                          <input
+                            class="form-control form-control-sm"
+                            type="text"
+                            placeholder="Response"
+                          />
+                        </div>
+                        <div class="col">
+                          <button type="submit" class="btn btn-danger">
+                            Send
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+
+                  <div class="post" style="margin-top: 20px">
+                    <div class="user-block">
+                      <img
+                        class="rounded-circle img-bordered-sm"
+                        src="/image/user7-128x128.jpg"
+                        alt="User Image"
+                        style="height: 30px; width: 30px"
+                      />
+                      <span class="username">
+                        <a href="#">Adam Jones</a>
+                        <a href="#" class="float-right btn-tool"
+                          ><i class="fas fa-times"></i
+                        ></a>
+                      </span>
+                      <span class="description"
+                        >Posted 5 photos - 5 days ago</span
+                      >
+                    </div>
+
+                    <div class="row mb-3" style="margin: 8px">
+                      <div class="col-sm-6">
+                        <img
+                          class="rounded-fluid"
+                          src="/image/photo1.png"
+                          alt="Photo"
+                          style="height: 350px; width: 510px"
+                        />
+                      </div>
+
+                      <div class="col-sm-6">
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <img
+                              class="mb-3"
+                              src="/image/photo2.png"
+                              alt="Photo1"
+                              style="height: 170px; width: 260px"
+                            />
+                            <img
+                              class="rounded-"
+                              src="/image/photo3.png"
+                              style="height: 170px; width: 260px"
+                              alt="Photo2"
+                            />
+                          </div>
+
+                          <div class="col-sm-6">
+                            <img
+                              class="img-fluid mb-3"
+                              src="/image/photo4.png"
+                              alt="Photo3"
+                              style="height: 170px; width: 260px"
+                            />
+                            <img
+                              class="img-fluid mb-3"
+                              src="/image/photo6.png"
+                              alt="Photo4"
+                              style="height: 170px; width: 260px"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <p>
+                      <a href="#" class="link-black text-sm mr-2"
+                        ><i class="fa fa-share"></i> Share</a
+                      >
+                      <a href="#" class="link-black text-sm"
+                        ><i class="fa fa-thumbs-o-up"></i> Like</a
+                      >
+                      <span class="float-right">
+                        <a href="#" class="link-black text-sm">
+                          <i class="fa fa-comments-o"></i> Comments (5)
+                        </a>
+                      </span>
+                    </p>
+                    <input
+                      class="form-control form-control-sm"
+                      type="text"
+                      placeholder="Type a comment"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
