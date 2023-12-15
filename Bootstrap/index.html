@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Use Bootstrap</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://adminlte.io/themes/v3/plugins/fontawesome-free/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="row p-3">
+      <div class="col-6"><h3>Profile</h3></div>
+      <div class="col-6">
+        <ol class="breadcrumb justify-content-end">
+          <li class="breadcum-item"><a href="#">Home </a></li>
+          <li class="breadcum-item active" aria-current="page">Library</li>
+        </ol>
+      </div>
+    </div>
+    <div>
+      <!-- Cột bên trái - Summary user's information -->
+      <div class="col-md-3">
+        <div class="card card-primary card-outline">
+          <div class="card-body box-profile">
+            <div class="text-center">
+              <img
+                class="img-user img-fluid img-circle"
+                src="https://adminlte.io/themes/v3/dist/img/user4-128x128.jpg"
+                alt="User profile picture"
+              />
+              <h3 class="profile-username text-center">Nina Mcintire</h3>
+              <p class="text-center text-muted">Software Engineer</p>
+              <ul class="list-group list-group-unbordered mb-3">
+                <li class="list-group-item">
+                  <b>Followers</b> <a class="float-right"> 1,322</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Following</b> <a class="float-right"> 543</a>
+                </li>
+                <li class="list-group-item">
+                  <b>Friends</b> <a class="float-right"> 13,287</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div>
+            <h3>About me</h3>
+          </div>
+          <div>
+            <strong>
+              <i class="fas fa-book mr-1"> Education</i>
+            </strong>
+            <p>
+              B.S in Computer Science from the University of Tennessee at
+              Knoxville
+            </p>
+            <hr />
+            <strong>
+              <i class="fas fa-map-marker-alt mr-1"> Location</i>
+            </strong>
+            <p>Malibu, California</p>
+            <hr />
+            <strong>
+              <i class="fas fa-pencil-alt mr-1"> Skills</i>
+            </strong>
+            <p>UI Design Coding Javascript PHP Node.js</p>
+            <hr />
+            <strong>
+              <i class="fas fa-file-alt mr-1"> Notes</i>
+            </strong>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+              fermentum enim neque.
+            </p>
+            <hr />
+          </div>
+        </div>
+        <!-- Cột bên phải - Main information -->
+        <div>
+          <div class="card">
+            <!-- Main info -->
+            <div class="card-header p-2">
+              <ul>
+                <li>Activity</li>
+                <li>Timeline</li>
+                <li>Settings</li>
+              </ul>
+            </div>
+            <!-- date of the main info -->
+            <div>
+              <img
+                src="https://adminlte.io/themes/v3/dist/img/user1-128x128.jpg"
+                alt="User image"
+              />
+              <p>Jonathan Burke Jr.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>
